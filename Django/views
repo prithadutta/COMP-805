@@ -1,0 +1,9 @@
+from django.shortcuts import render
+
+def home(request):
+    '''
+    renders homepage
+    '''
+    greeting= "uStudy-The best study site in the world!"
+    context={'our_greeting':greeting}
+    return render(request, 'home.html', context)
