@@ -103,3 +103,33 @@ def check_is_less_than(number1, number2):
     else:
           return False
     pass
+def check_num_prime(num):
+    """
+    This function returns True if num is prime else returns False
+    """
+    if num > 1:
+ 
+     for i in range(2,num):
+       if (num % i) == 0:
+           return False
+           break        
+       else:
+           return True
+       
+     else:
+           return False
+     pass
+
+def find_factorial(num):
+   """ 
+   This function returns factorial of num
+   """
+   fact=1
+   if num == 0:
+          return 1
+   else:
+            
+          for i in range(1,num+1):
+               fact = fact * i
+          return fact
+pass
