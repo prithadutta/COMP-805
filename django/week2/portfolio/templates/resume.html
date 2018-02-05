@@ -1,0 +1,54 @@
+
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+	<h1>My Resume</h1>
+	<p>Name: {{my_name}}</p>
+	<p>Address: {{my_addr}}</p>
+	<p>Phone: {{my_phone}}</p>
+	<p>Email: {{my_email}}</p>
+	<h2>Education</h2>
+	<table>
+		<th>University</th>
+		<th>|</th>
+		<th>Course</th>
+		<th>|</th>
+		<th>From - End</th>
+		<tr>
+			<td>University of New Hampshire</td>
+			<td>|</td>
+			<td>MS Information Technology</td>
+			<td>|</td>
+			<td>Fall 2017 - Summer 2019</td>
+		</tr>
+
+	</table>
+	<h2>Experience</h2>
+	<table>
+		<th>Organization</th>
+		<th>|</th>
+		<th>Job Title</th>
+		<th>|</th>
+		<th>Job Functions</th>
+		<th>|</th>
+		<th>From - End</th>
+		<tr>
+			<td>Tech Mahindra</td>
+			<td>|</td>
+			<td>Software Engineer</td>
+			<td>|</td>
+			<td>Software Development, support, maintenance ans Testing</td>
+			<td>|</td>
+			<td>Jan 2014- May 2017</td>
+		</tr>
+
+	</table>
+	<h2>Skills</h2>
+	{% for skills in my_skills %}
+		<ul>
+			<li>{{skills}}</li>
+		</ul>
+
+	{% endfor %}
+{% endblock %}
