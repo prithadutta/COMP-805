@@ -18,42 +18,42 @@ def give_me_a_string():
     This function returns a string value
     """
     return "My name is Pritha"
-    pass
+    
 
 def give_me_an_integer():
     """
     This function returns an integer value
     """
     return 5
-    pass
+    
 
 def give_me_a_boolean():
     """
     This function returns a boolean value
     """
     return True
-    pass
+    
 
 def give_me_a_float():
     """
     This function returns a float value
     """
     return 5.0
-    pass
+    
 
 def give_me_a_list():
     """
     This function returns a list
     """
     return ["Teacher","Student"]
-    pass
+    
 
 def give_me_a_dictionary():
     """
     This function returns a dictionary
     """
-    return{1:"Teacher",2:"Student"}
-    pass
+    return {1:"Teacher",2:"Student"}
+    
 
 def give_me_a_tuple():
     """
@@ -77,8 +77,7 @@ def sum_numbers_one_to_ten():
     return sum
     
     
-    pass
-
+    
 def check_is_even(number):
     """
     This function returns True if num is even
@@ -91,7 +90,7 @@ def check_is_even(number):
            return True
     else:
            return False
-    pass
+    
 
 def check_is_less_than(number1, number2):
     """
@@ -102,7 +101,7 @@ def check_is_less_than(number1, number2):
           return True
     else:
           return False
-    pass
+    
 def check_num_prime(num):
     """
     This function returns True if num is prime else returns False
@@ -118,7 +117,7 @@ def check_num_prime(num):
        
      else:
            return False
-     pass
+     
 
 def find_factorial(num):
    """ 
@@ -132,4 +131,4 @@ def find_factorial(num):
           for i in range(1,num+1):
                fact = fact * i
           return fact
-pass
+
