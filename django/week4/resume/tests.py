@@ -40,4 +40,4 @@ class ResumeTest(TestCase):
         """
         self.assertEqual(self.resume.get_education().first(), self.education)
 
-# Create your tests here.
+# Create your tests  here.
