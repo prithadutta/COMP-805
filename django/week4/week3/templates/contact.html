@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+	<h1>Contact Pritha!</h1>
+	<form>
+		<div>
+			Full name:<br>
+	  		<input type="text" name="FullName" >
+	 	</div>
+		<div>
+	  		E-mail:<br>
+	  		<input type="email" name="Email" >
+		</div>
+		<div>
+			Reason for contacting:<br>
+			 <textarea name="Reason" rows="10" cols="20"></textarea>
+		</div>
+		<input type="submit" value="Submit!">
+	</form>
+{% endblock %}
