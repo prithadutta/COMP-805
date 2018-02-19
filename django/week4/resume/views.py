@@ -7,7 +7,7 @@ def home(request):
 	"""
 	renders the resume page from resume app
 	"""
-	resume_obj = Resume.objects.first()
+	resume = Resume.objects.first()
 
 	return render(request, "resume/home.html",
-	context={"resume": resume_obj})
+	context={"resume": resume })
