@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<input type="text" id="query" placeholder="Enter a username to search for">
+	<button onclick="get_external_data()">Search Users</button>
+	<ul id="my-list"></ul>
+<script>
+	function get_external_data(){
+		//get the UL
+		var ul = document.getElementById('my-list');
+		//clear it
+		// clear_ul(ul);
+		//build query string and fetch
+
+
+		var query = document.getElementById('query').value;
+		var url = "https://www.google.com";
+		fetch(url).then(function(response) {
+			//this returns a promise, we want the response as json
+			return response.json();
+		}).then(function(response) {
+			// .then is executed after the successful fetch
+			console.log(response);
+		}).catch(function(error){
+			// .catch is run if an error occured
+			console.log('error');
+		})
+	}
+</script>
+<!-- <script src=""></script> -->
+</body>
+
+</html>
