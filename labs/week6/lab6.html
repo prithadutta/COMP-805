@@ -94,7 +94,7 @@
 		<input type = "text" id = "geturl">
 		<button onclick = "fetch_data1()">Fetch!</button>
 		<script>
-		function fetch_data1(){s
+		function fetch_data1(){
 			var url = document.getElementById("geturl").value;
 			fetch(url).then(function(response){
 				return response.json();
