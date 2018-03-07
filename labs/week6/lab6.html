@@ -97,7 +97,7 @@
 		function fetch_data1(){
 			var url = document.getElementById("geturl").value;
 			fetch(url).then(function(response){
-				return response.json();
+				return response.text();
 			}).then(function(response){
 				console.log(response);
 			}).catch(function(error){console.log("error");
